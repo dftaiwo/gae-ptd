@@ -1,11 +1,12 @@
 # GDG LAGOS GIT EVENT
+[https://plus.google.com/events/c60h8l7f6sn6fcm3r75dh4qshmg]
 
-This is the AWS slide for the GDG Cloud event held on the 14th December at the CCHUB in Lagos, Nigeria.
+These are the slides for the  Introduction to Google App Engine  slide for the "GDG Get With Git" event held on the 24th May at the CCHUB in Lagos, Nigeria.
 
 ## Setup
 To set this up on your system, just run:
 
-```git clone http://github.com/nanyaks/git-slides.git```
+```git clone http://github.com/dftaiwo/gae-ptd.git```
 
 The above command will give you a local copy of the project checked out to a directory in your system.
 

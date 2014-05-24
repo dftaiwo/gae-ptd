@@ -13,3 +13,53 @@ img.logo-main {
 	width: 430px;
 	border: 0;
 }
+
+
+root { 
+        display: block;
+}
+
+.lightDottedGrid td,.lightDottedGrid th{
+        border:1px solid #ccc;
+}
+
+th{
+        font-weight:600;
+}
+
+.leftAlign{
+        text-align: left;
+}
+.smaller *{
+        font-size:80%;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6,.reveal {
+        line-height:1.2em;
+}
+.reveal .floatList li{
+        display:block;
+        float:left;
+        margin:10px;
+        width:150px;
+padding: 10px;
+border: 1px solid #ccc;;
+   text-align: center;
+   font-size:0.7em;
+}
+
+.reveal a:link,.reveal a:visited{
+        color:#cff;
+}
+
+.reveal section img {
+        border:0;
+        background:none;
+}
+
+.spacedList li{
+        margin-bottom:1.5em;
+}
+.reveal section  .alert{
+        color:#17ff2e;
+}

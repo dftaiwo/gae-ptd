@@ -1,408 +1,437 @@
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Getting With Git - GDG Event</title>
+        <meta name="description" content="Google developer group Lagos git source version control event held at the CCHub Lagos.">
+        <meta name="author" content="Femi TAIWO">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<head>
-		<meta charset="utf-8">
-		<title>Getting With Git - GDG Event</title>
-		<meta name="description" content="Google developer group Lagos git source version control event held at the CCHub Lagos.">
-		<meta name="author" content="Nanyak Loknan S.">
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/reveal.min.css">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		
-		<!-- <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+        <!-- <link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- <link rel="stylesheet" href="css/theme/simple.css" id="theme"> -->
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <!-- <link rel="stylesheet" href="css/theme/simple.css" id="theme"> -->
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
 
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+        <script>
+            document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+        </script>
 
-		<link rel="stylesheet" href="css/custom.css">
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+        <link rel="stylesheet" href="css/custom.css">
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
 
-	<body>
+    <body>
 
-		<div class="reveal">
+        <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1 id="what_is_aws">GDG LAGOS</h1>
-					<h3>Getting Deep with Git</h3>
-				</section>
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section>
+                    <h2 id="what_is_aws">Google App Engine <br /><br />&<br /><br /> Push To Deploy</h2>
+                    &nbsp;
+                    <h3>GDG LAGOS</h3>
+                </section>
 
-				<section>
-					<div>
-						<div class="subnotes">Nanyak Loknan S.</div>
-						<br />
-						<small><a href="http://twitter.com/nanyaks">@nanyaks</a></small>
-					</div>
-				</section> <!-- intro name -->
+                <section>
+                    <div>
+                        <div class="subnotes">Femi TAIWO</div>
+                        <br />
+                        <small><a href="http://twitter.com/dftaiwo">@dftaiwo</a></small>
+                    </div>
+                </section> <!-- intro name -->
 
-				<section>
-					<img src="./img/logo.png" class="logo-main" alt="git logo" />
-				</section>
+                <section>
+                    <h3>What is Google App Engine?</h3>
+                    <img src="./img/logo.png" alt="gae logo" height="300" />
+                    <img src="./img/logo_new.png" alt="gae new logo" height="300" />
 
-				<section>
-					<div>
-						What is Git and why all the <strong>'hype'</strong>?
-					</div>
-					<br />
-					<small class="subnotes">Feel free to ask your questions!</small>
-				</section>
+                </section>
 
-				<section>
-					<h2>A bit of a background</h2>
-					<br />
-					<div>
-						Git was created in 2007 by Linus Torvalds ...
-					</div>
+                <section>
+                    <h3>
+                        Build and Run Applications <br /><br />on Google's infrastructure
+                    </h3>
 
-				</section>
+                </section>
 
-				<section>
-					<h2>A bit of a background</h2>
-					<br />
-					<div>
-						I said <strong>'a bit'</strong> ...
-					</div>
-					<br />
-					<small>see <a href="http://en.wikipedia.org/wiki/Git_(software)">wikipedia</a></small>
-				</section>
-				
-				<section>
-					<h2>What is Git?</h2>
-					<div>
-						Simply put, git is a source code management system.
-					</div>
-					<div class="subnotes">
-						<strong>Source control / Version control</strong> is the management of changes to documents, computer programs  and other collections of information
-					</div>
-					<small>see <a href="http://en.wikipedia.org/wiki/Revision_control">wikipedia</a> article for more!</small>
-				</section>
+                <section>
+                    <h3>Supports</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>Go</li>
+                        <li>Python</li>
+                        <li>*MySQL</li>
 
-				<section>
-					<section>
-						<h2>What Git is not!</h2>
-						<div>
-							<img src="./img/octocat2.png" alt="" />
-						</div>
-						<div><a href="http://github.com/">Github</a></div>
-					</section>
-					<section>
-						<h2>Neither is it...</h2>
-						<div>
-							<img src="./img/bitbucket.png" alt="" />
-						</div>
-						<div><a href="http://bitbucket.org/">Bitbucket</a></div>
-					</section>
-				</section>
-				<section>
-					<section><h2 class="">Why should I care?</h2></section>
-					<section>
-						<div class="point">Git makes your life easier</div>
-						<div id="name" class=" subnotes">
-						   Yes, it does!
-						</div>
-					</section>
-					<section>
-						<div id="point" class="point">
-							Has this ever happened to you?
-						</div>
-						<div id="j" class="subnotes">
-								<img src="./img/code-lost-tlk.png" alt=""/>
-						</div>
-					</section>
-					<section>
-						<div id="point" class="point">
-							Now you don't need to worry about it!
-						</div>
-						<div id="j" class="subnotes">
-								<img src="./img/man-git2.png" alt=""/>
-						</div>
-					</section>
-					<section>
-						<div class="subnotes">That in itself is a winner for version control.</div>
-					</section>
-				</section> <!-- why? -->
+                    </ul>
 
-				<section>
-					<section><h2 class="">Some more benefits of git</h2></section>
-					<section>
-						<h3>Data redundancy and replication</h3>
-						<div class="subnotes">
-							Since there are multiple full repositories on multiple machines (instead of one central repository), the risk of project loss due to server failure or some other catastrophe is much lower.
-						</div>
-					</section>
-					<section>
-						<h3>High Availability</h3>
-						<div class="subnotes">
-							High availability -- Server down? Network down? No problem. Work in your repo (commit, view history, branch, etc) to your heart's content. Try that with Subversion!
-						</div>
-					</section>
-					<section>
-						<h3>One central .git directory</h3>
-						<div class="subnotes">
-							Only one .git directory per repository -- Versus a .svn in every subfolder, which, as you may know from painful personal experience, can lead to problems.
-						</div>
-						<small>This might not seem like a benefit but ask those that used other version control systems</small>
-					</section>
-					<section>
-						<h3>Superior disk utilization and network performance</h3>
-						<div class="subnotes">
-							Git efficiently compresses the objects in the .git directory, saving you space.
-						</div>
-					</section>
-					<section>
-						<h3>Collaboration Friendly</h3>
-						<div class="subnotes">
-							Git makes it easy to collaborate on projects with groups of contributors. And with great services like Github, Git's collaboration friendliness is even further magnified.
-						</div>
-					</section>
-				</section> <!-- why? -->
+                </section>
 
-				<section>
-					<h2>Now the fun stuff!</h2>
-				</section> <!-- reference model -->
+                <section>
+                    <section>
+                        <div>
+                            <h3>
+                                Google App Engine
+                            </h3>
+                            <div>
+                                A Platform as a Service (PaaS)
+                            </div>
+                            <small class='subnotes'>Talk about Service Models</small>
+                        </div>
+                    </section>
 
-				<section>
-					<h3 style="position: absolute; top: -280px; left: 300px;">Installing Git</h3>
-					<section>
-						<h3>Windows</h3>
-						<div class="subnotes">
-							Installing Git on windows
-						</div>
-						<ul>
-							<li>Download the installer from <a href="http://msysgit.github.com/">http://msysgit.github.com/</a></li>
-							<li>Run the installer</li>
-						</ul>
-					</section>
-					<section>
-						<h3>Mac</h3>
-						<div class="subnotes">
-							<a href="http://sourceforge.net/projects/git-osx-installer/">http://sourceforge.net/projects/git-osx-installer/</a>
-						</div>
-						<div class="subnotes">
-							Or via the MacPorts
-							<pre><code>sudo port install git-core +svn +doc +bash_completion +gitweb</code></pre>
-						</div>
-					</section>
-					<section>
-						<h3>Linux</h3>
-						<div class="subnotes">
-							Red Hat based systems (Fedora, CentOS)
-							<pre><code>yum install git-core</code></pre>
-						</div>
-						<div class="subnotes">
-							Debian based systems (Ubuntu)
-							<pre><code>sudo apt-get install git</code></pre>
-						</div>
-					</section>
-				</section> <!-- global infrastructure -->
-				<section>
-					<h3>Now that we have git installed, lets have some fun!</h3>
-				</section> <!-- global infrastructure -->
-				<section>
-					<h3>History</h3>
-					<div>
-						Git is really all about your history.
-					</div>
-					<div>
-						It creates a specialized filesystem to store your code history and when you tell it to, it records snapshots of your code repository.
-					</div>
-				</section> <!-- global infrastructure -->
-				<section>
-					<div>Do note that git is a command line tool that has GUI frontends, though very convenient, does not show the full power of git. So once we understand the concepts, we'll move to a gui tool</div>
-				</section>
-				<section>
-					<h3>Initializing a Git repository</h3>
-					<div>Navigate into the folder you'd like git to start tracking and run</div>
-					<pre><code>$ git init</code></pre>
-				</section> <!-- global infrastructure -->
+                    <section>
+                        <h3>Service Models</h3>
+                        <p><strong>Infrastructure as a Service (IaaS)</strong></p>
+                        <p><strong>Platform as a Service (PaaS)</strong></p>
+                        <p><strong>Software as a Service (SaaS)</strong></p>
+                    </section>
+                    <section>
+                        <img src="img/ccl.png" /><br />
+                        <small>
+                            credits: <a href="http://en.wikipedia.org/wiki/Cloud_computing">
+                                http://en.wikipedia.org/wiki/Cloud_computing
+                            </a>
+                        </small>
+                    </section>
+                </section>
+                <section>
+                    <div>
+                        <h3>
+                            Google App Engine
+                        </h3>
+                        <div>
+                            Focus on Code. Not Infrastructure!
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Google App Engine</h3>
+                    <div>
+                        <ul>
+                            <li>
+                                Scales to your demand (Up to 7 billion requests a day)
+                            </li>
+                            <li>
+                                Easy to Get Started
+                            </li>
+                            <li>
+                                World Class Infrastructure
+                            </li>
+                            <li>
+                                Free Quota & Paid Options
+                                <br />
+                                <small><a href="https://developers.google.com/appengine/docs/quotas">More on Quotas</a></small>
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                </section>
+                <section>
+                    <h3>A Few Popular Users</h3>
+                    <div>
+                        <ul>
+                            <li>
+                                Snapchat
+                            </li>
+                            <li>
+                                Rovio
+                            </li>
+                            <li>
+                                Khan Academy
+                            </li>
+                            <li>
+                                FunnyLeni
+                                <br /><small><a target="_blank" href="http://www.funnyleni.com/">FunnyLeni.com</a></small>
+                            </li>
+                        </ul>
+                    </div>
+                    <br />
+                    <small>
+                        see <a href="https://cloud.google.com/customers/">
+                            https://cloud.google.com/customers/
+                        </a>
+                    </small>
+                </section>
+                <section>
+                    <h3>Tons of Features  - 1 </h3>
+                    <h4>Data storage, retrieval, and search</h4>
+                    <ol>
+                        <li>Google Cloud SQL</li>
+                        <li>Datastore</li>
+                        <li>Blobstore</li>
+                        <li>Memcache</li>
+                        <li>Logs</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Tons of Features - 2 </h3>
+                    <h4>Communications</h4>
+                    <ol>
+                        <li>Channel</li>
+                        <li>Google Cloud Endpoints</li>
+                        <li>Mail</li>
+                        <li>URL Fetch</li>
+                        <li>XMPP<br />
+                            <small>XMPP: Extensible Messaging and Presence Protocol </small>
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Tons of Features - 3 </h3>
+                    <h4>Still Much More</h4>
+                    <ol>
+                        <li>Task Queue</li>
+                        <li>Scheduled Tasks</li>
+                        <li>Traffic Splitting</li>
+                        <li>Multi-Tenancy (Using Namespaces)</li>
+                        <li>MapReduce</li>
+                    </ol><br />
+                    <small><a href="https://developers.google.com/appengine/features/">List of Features</a></small>
+                </section>
+                <section>
+                    <h2>Getting Started</h2>
+                    <p><a href="https://developers.google.com/appengine">https://developers.google.com/appengine</a></p>
+                    <ol>
+                        <li><a href="https://developers.google.com/appengine/downloads">Download the SDK</a>.</li>
+                        <li><a href="https://appengine.google.com/">Sign up</a> for an account.</li>
+                        <li>Read the <a href="https://developers.google.com/appengine/">getting started</a> information for your language.</li>
+                        <li>Check out the rest of the <a href="https://developers.google.com/appengine/docs/">App Engine documentation</a>.</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Let's Show How in 5 minutes or less</h3>
+                    <ol>
+                        <li>
+                            Open the Cloud Developers Console<br />
+                            <a href="http://cloud.google.com/console"> <small>[ http://cloud.google.com/console ]</small>
+                            </a>
+                        </li>
+                        <li>Click Create Project</li>
 
-				<section data-background="#ffffff">
-					<div class="statichd">
-						<h3 class="hack-take-up">Concepts to remember</h3>
-					</div>
-					<img style="border:0;" src="./img/three-stages.png">
-				</section> <!-- elb -->
-				
-				<section>
-					<div class="statichd">
-						<h3 class="hack-take-up">simple storage service (s3)</h3>
-					</div>
-					<img src="./img/s3.png">
-					<section>
-						<div class="point">an object storage platform that acts as a fundamental bedrock of many applications</div>
-						<div class="subnotes">unlimited storage of any type of data upto 5tb in size</div>
-					</section>
-				</section> <!-- s3 storage -->
+                        <li>Enter a project name and a project ID</li>
 
-				<section>
-					<div class="statichd">
-						<h3 class="hack-take-up">elastic block storage (ebs)</h3>
-					</div>
-					<img src="./img/ebs-main.png">
-					<section>
-						<div class="point">this is a high performance block storage device that can be mounted as drives on instances</div>
-						<div class="subnotes">with flexible sizes, you have more than enough space for your application environment</div>
-					</section>
-					<section>
-						<div class="point">the ebs volume is private to your instance</div>
-						<div id="name" class="subnotes">
-							the operating system of an instance resides on the ebs volume and any launched instance will boot from this drive
-						</div>
-					</section>
-					<section>
-						<div class="point">integrates with snapshotting features</div>
-						<div id="name" class="subnotes">
-							snapshots of the ebs volumes can be taken for point in time restore or even used to launch another instance.
-						</div>
-					</section>
-				</section> <!-- ebs -->
+                        <li>Click Create</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>Push To Deploy in 8 minutes or less</h3>
+                    <ol>
+                        <li>Create Your Project on GitHub</li>
+                        <li>Install Git</li>
+                        <li>
+                            Open the Cloud Developers Console<br />
+                            <a href="http://cloud.google.com/console"> <small>[ http://cloud.google.com/console ]</small>
+                            </a>
+                        </li>
+                        <li>
+                            Select  Your Project
+                        </li>
+                        <li>
+                            Select Cloud Development > Releases in the left-hand navigation panel
+                        </li>
 
-				<section>
-					<div class="statichd">
-						<h3 class="hack-take-up">relational database service (rds)</h3>
-					</div>
-					<img src="./img/rds-main.png">
-					<section>
-						<div class="point">provides database-as-a-service</div>
-						<div class="subnotes">managing a production database can be a real pain, rds alleviates this for you.</div>
-					</section>
-					<section>
-						<div class="point">easily launch scalable and fault tolerant mysql, oracle or sql server databases</div>
-						<div id="name" class="subnotes">
-							like the ec2, the rds allows you to launch instances based on classes (ie. micro, small, medium, large etc)
-						</div>
-					</section>
-				</section> <!-- rds -->
+                        <li>
+                            <p>Click <strong>Connect a GitHub Repo</strong>.</p>
+                        </li>
+                        <li>
+                            <p>Enter the GitHub repository URL</p>
+                        </li>
+                        <li>
+                            <p>Click <strong>Connect</strong>.</p>
+                        </li>
+                        <li>
+                            <p>Authorize access</p>
+                        </li>
+                    </ol>
+                </section>
+                <section>
+                    <h1>Thank you!</h1>
+                </section>
+                <section>
+                                        <h2>about <br />Google Developers Groups</h2>
+                                </section>
+                                
+                                <section>
+                                        <h2>Google Developers Groups - GDGs</h2>
+                                        <ul class="spacedList">
+                                                <li>Communities</li>
+                                                <li>For Developers, Designers & Serious Tech Enthusiasts</li>
+                                                <li>Focused primarily on Google Platforms & Products</li>
+                                                <li> Talk about Technology in General</li>
+                                                <li>Supported by Google</li>
+                                        </ul>
+                                </section>
+                                <section>
+                                        <h2>Google Developers Groups - GDGs</h2>
+                                        <ul class="spacedList">
+                                                <li>Physical Meetups</li>
+                                                <li>Mailing List/Online Communities</li>
+                                                <li>Workshops</li>
+                                                <li>Hackathons & CodeParties</li>
+                                                
+                                        </ul>
+                                </section>
+                                <section>
+                                        <h2>Google Developers Groups - GDGs</h2>
+                                        <h4>Current Focus</h4>
+                                        <ul class="spacedList">
+                                                <li>Android</li>
+                                                <li>Google App Engine</li>
+                                                <li>Google Maps API</li>
+                                                <li>YouTube API</li>
+                                                <li>G+</li>
+                                        </ul>
+                                </section>
+                                <section>
+                                        <h2>Google Developers Groups - GDGs</h2>
+                                        <h4>Competitions</h4>
+                                        <ul class="spacedList">
+                                                <li>Organize</li>
+                                                <li>Participate</li>
+                                        </ul>
+                                </section>
+                                <section>
+                                        <h2>Google Developers Groups - GDGs</h2>
+                                        <h4>Android Africa Challenge</h4>
 
-				<section>
-					<div class="statichd">
-						<h3 class="hack-take-up">cloudfront</h3>
-					</div>
-					<img src="./img/cloudfront-main.png">
-					<section>
-						<div class="point">this serves as a content delivery network for static assets on the aws stack.</div>
-						<div class="subnotes">easily distibute content to your users with low latency and high data transfer speeds.</div>
-					</section>
-				</section> <!-- ebs -->
+                                         
+                                </section>
+                                  
+                                <section>
+                                        <h2>Google Developers Groups - GDGs</h2>
+                                        <h3>GDGs In Nigeria</h3>
+                                        <ul class="floatList smaller">
+                                                <li>
+                                                        GDG Abuja 
+                                                </li>
+                                                <li>
+                                                        GDG Akure 
+                                                </li>
+                                                <li>
+                                                        GDG Lagos 
+                                                </li>
+                                                <li>
+                                                        GDG OAU 
+                                                </li>
+                                             
+                                                <li>
+                                                        GDG LASU 
+                                                </li>
+                                                <li>
+                                                        GDG Kano 
+                                                </li>
+                                                <li>
+                                                        GDG Uyo 
+                                                </li>
+                                                <li>
+                                                        GDG BUK  
+                                                </li>
+                                                <li>
+                                                        GDG Enugu  
+                                                </li>
+                                                <li>
+                                                        GDG Ibadan  
+                                                </li>
+                                                <li>
+                                                        GDG Kaduna 
+                                                </li>
+                                                <li>
+                                                        GDG Unilorin  
+                                                </li>
+                                                <li>
+                                                        GDG UNN
+                                                </li>
+                                                <li>
+                                                        Port Harcourt
+                                                </li>
+                                                <li>
+                                                        GDG Bingham
+                                                </li>
+                                                <li>
+                                                        GDG Unilag
+                                                </li>
+                                                <li>
+                                                        GDG Benin
+                                                </li>
+                                                <li>
+                                                        GDG Lautech
+                                                </li>
+                                                <li>
+                                                        GDG AdoEkiti
+                                                </li>
+                                                <li>
+                                                        GDG Lafia
+                                                </li>
+                                                <li>
+                                                        GDG Funaab
+                                                </li>
+                                </section>
+                <section>
+                    <h2>GDG Lagos :: Next Month</h2>
+                    &nbsp;
+                    <h2>
+                        <u> I/O Extended</u>
+                    </h2>
+                    <h3>June 26</h3>
+                    <br />
+                    Join Us: <a href="bit.ly/gdglagos">bit.ly/gdglagos</a>
+                </section>
+                 
+            </div>
+        </div>
 
-				<section>
-					<div class="staticHd">
-						<h3 class="hack-take-up">Elastic Beanstalk</h3>
-					</div>
-					<img src="./img/bean-main.png">
-					<section>
-						<div class="point">Rapidly deploy your applications to the Amazon Cloud.</div>
-						<div class="subnotes">The Elastic Beanstalk allows automatic creation of application environment and proceeds with application deployment.</div>
-					</section>
-				</section> <!-- EBS -->
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
 
-				<section>
-				<div class="small subnotes"> 
-					[ Intentionally left blank ]
-				</div>
-				</section>
-				<section>
-					<h2>Nginx</h2>
-					<p>
-						Nginx is a fast and very flexible HTTP and Reverse Proxy Server built by Igor Sysoev in 2002.
-					</p>
-					<div id="J" class="subnotes">
-					   The project started with a strong focus on high concurrency, high performance and a low memory footprint
-					</div>
-				</section>
+        <script>
 
-				<section>
-					<h2>Basic Features</h2>
-					<p>
-						Nginx does a lot of the functions of a regular Web server and is excellent as a reverse proxy sitiing on your network.
-					</p>
-					<p>
-						<ul>
-						<li>Serving static content</li>
-						<li>Reverse proxying and caching</li>
-						<li>Simple load balancing and fault tolerance</li>
-						<li>Reconfiguration and upgrade of the nginx executable without a server restart</li>
-						<li>Customizable access log formats</li>
-						<li>Easily execute functions based on client addresses</li>
-						<li>Media Streaming</li>
-						<li>... and many more</li>
-						</ul>
-					</p>
-				</section>
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-				<section>
-					<h1>Thank you!</h1>
-				</section>
+                // Parallax scrolling
+                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                // parallaxBackgroundSize: '2100px 900px',
 
-				<section>
-				<h2>Glossary</h2>
-				<div class="point">Instance types</div>
-				<div class="pricing">
-					<div>
-						<ul>
-							<li>t1.micro - N3.177/hr ($0.020)</li>
-							<li>m1.small - N9.50 ($0.060)</li>
-							<li>m1.medium - N19.06 ($0.120)</li>
-							<li>m1.large - N38.12 ($0.240)</li>
-							<li>cc2.8xlarge - N381.2 ($2.40)</li>
-						</ul>
-					</div>
-				</div>
-				<div id="name" class="small">
-				   see http://aws.amazon.com/ec2/pricing/
-				</div>
-				</section>
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    {src: 'lib/js/classList.js', condition: function() {
+                            return !document.body.classList;
+                        }},
+                    {src: 'plugin/markdown/marked.js', condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }},
+                    {src: 'plugin/markdown/markdown.js', condition: function() {
+                            return !!document.querySelector('[data-markdown]');
+                        }},
+                    {src: 'plugin/highlight/highlight.js', async: true, callback: function() {
+                            hljs.initHighlightingOnLoad();
+                        }},
+                    {src: 'plugin/zoom-js/zoom.js', async: true, condition: function() {
+                            return !!document.body.classList;
+                        }},
+                    {src: 'plugin/notes/notes.js', async: true, condition: function() {
+                            return !!document.body.classList;
+                        }}
+                ]
+            });
 
-			</div>
-
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
-
-		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
-		</script>
-
-	</body>
+        </script>
+    </body>
 </html>
